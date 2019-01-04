@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "woman",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Age": {
+      "default": "",
+      "type": "integer"
+    },
+    "spouse": {
+      "model": "man",
+      "via": "spouse"
+    },
+    "children": {
+      "collection": "children",
+      "via": "mother"
+    },
+    "addresses": {
+      "collection": "address",
+      "via": "women"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string"
+    },
+    "Address": {
+      "default": "",
+      "type": "string"
+    },
+    "men": {
+      "collection": "man",
+      "via": "addresses",
+      "dominant": true
+    },
+    "women": {
+      "collection": "woman",
+      "via": "addresses",
+      "dominant": true
+    },
+    "children": {
+      "collection": "children",
+      "dominant": true,
+      "via": "addresses"
+    }
+  }
+}

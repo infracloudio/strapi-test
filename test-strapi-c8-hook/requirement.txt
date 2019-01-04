@@ -1,0 +1,6 @@
+argparse
+logging
+prettytable
+pynpm
+requests
+GitPython
